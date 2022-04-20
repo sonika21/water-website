@@ -8,353 +8,328 @@
     font-family: 'Nunito', sans-serif;
 }
 
-/*Header*/
-.banner{
-position: relative;
-width: 100%;
-height: 100vh;
-justify-content: center;
-align-items: center;
-}
+/*HEADER*/
 
 header{
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
 }
 
- .line{
+header .topbar{
     width: 100%;
     background-color: #4d0099;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     color: rgb(222, 192, 22);
     text-transform: uppercase;
     font-weight: bold;
 }
 
- .head1{
+header .headercontent{
     width: 100%;
-    height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* background-color: beige; */
 }
 
-.head1 .icons {
-    
+header .headercontent .hpart{
+    width:30%;
+    padding: 10px 0 0 20px;
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+
+header .headercontent .headercallimg img{
+    padding-left: 130px;
+}
+
+header .headercontent .headeroptions{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
 }
 
- .head1 .icons a{
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0 10px;
-    color: black;
-}
-
-.navbar{
-    margin: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar a{
-    font-size: 15px;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.content1{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background:#3475ca;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content1 .drinkimg{
-    /* background-size: cover;
-    max-width: 100%;
-    max-height: 100%; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-}
-
-.part1cont {
-    color: white;
-    position: absolute;
-    padding: 50px;
-    left: 40px;
-}
-
-.part1h2{
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: light;
-}
-
-.part1ul{
-    margin:15px 0;
-    list-style: none;
-}
-
-.part1ul li{
+header .headercontent .headeroptions a{
     display: inline-block;
-    list-style: circle;
+    margin: 10px;
+    padding: 10px;
+}
+
+header .navbar{
+    margin: 5px 300px 5px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar a{
+    font-size: 14px;
+    display: inline;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+/*BODY*/
+
+.container{
+    background: rgb(241, 246, 251);
+}
+
+.banner{
+    background: url("./images/drink1.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+
+.banner .bannercontent{
+    padding-left: 100px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.banner .bannercontent h2{
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.banner .bannercontent ul{
+    margin-top: 20px;
+}
+
+.banner .bannercontent ul>li{
+    display: inline-block;
     margin: 0 10px;
 }
 
-.part1ul li:first-child{
-    margin-left: 0;
-}
-
-
-.btn{
-    margin-top: 15px;
-    border-radius: 20px;
-    height: 50px;
-    width: 120px;
+.banner .bannercontent .btn,
+.uses .cardsection .card .btn,
+.uses .btn,
+.about .contbx .btn,
+.applications .btn,
+.blueemail .bluecont .blueinpemail .btn{
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 10px 20px;
     background-color: rgb(222, 192, 22);
-    font-size: 12px;
+    font-size: 0.875rem; /*14px;*/
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
     align-items: center;
     border-style:  5px solid #4d0099;
 }
 
-.btn2{
+.banner .bannercontent .btn2{
+    margin-left: 30px;
     opacity: 0.5;
 }
 
-.content2{
+.separator{
     background-color: #4d0099;
     width: 100%;
-    height: 100px;
+    height: 150px;
+    position: relative;;
+}
+
+.separator .part2content{
+   background-color: #fff;
+   width: 70%;
+   height: 150px;
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+   border-radius: 5px; 
+   position: absolute;
+   top: 50px;
+   left: 200px;
 }
 
-.part2content{
-    width: 80%;
-   height: 180px;
-   margin-top: 30px;
-   padding: 20px 40px;
-   /* padding-top: 300px;
-    margin-top: -300px; */
-   position: relative;
-   background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;  
-}
-
-.content2 .part2content .value{
-    position: relative;
-    /* background: cyan; */
-    width: 150px;
-    height: 130px;
+.separator .part2content .value{
+    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
     color: #4d0099;
+    margin: 0 10px;
 }
 
-.content2 .part2content .value i{
-    color: #4d0099;
-    font-size: 30px;
-}
-
-.content2 .part2content .value p{
-    font-size: 15px;
+.separator .part2content .value p{
     font-family: 'Poppins', sans-serif;
-    font-weight: light;
-    justify-content: right;
+    font-size: 0.75rem;
+    margin: 20px;
+    text-align: center;
 }
 
-.middleSection{
-    background: rgb(241, 246, 251);
+.separator .part2content .value i{
+    color: #4d0099;
+    border-radius: 50%;
+    border: 2px solid #4d0099;
+    padding: 10px;
+}
+
+.uses{
+    /* background: rgb(241, 246, 251); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 1000px; */
+    padding: 130px;
 }
 
-.cardsection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 200px;
-    width: 80%;
-}
-
-.precard{
-    font-size: 25px;
+.uses .precard,
+.applications .precard{
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 15px;
     border-bottom: 3px solid rgb(181, 240, 55);
 }
 
-.container{
+.uses .cardsection{
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
     width: 100%;
+    padding: 10px;
 }
 
-.card{
-    background: #fff;
+.uses .cardsection .card{
+    background-color: #fff;
+    border-radius: 15px;
     width: 270px;
     height: 450px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-.card-image{
+.uses .cardsection .card .card-image{
     height: 170px;
-    margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;;
 }
 
-.car-1{
+.uses .cardsection .card .car-1{
     background-image: url("./images/img1.jpg");
 }
 
-.car-2{
+.uses .cardsection .card .car-2{
     background-image: url("./images/img2.jpg");
 }
 
-.car-3{
+.uses .cardsection .card .car-3{
     background-image: url("./images/img3.jpg");
 }
 
-.card h2{
-    padding: 10px;
-}
-
-.card p{
-    padding:10px
-}
-
-.card a{
-    background-color: rgb(222, 192, 22);
-    padding: 15px 20px;
-    font-size: 12px;
-    border-radius: 20px;
-    text-align: center;
-    margin: 20px 50px;
-    display: block;
+.uses .cardsection .card h2{
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    font-size: 13px;
 }
 
-.viewmore a{
-    background-color: rgb(222, 192, 22);
-    padding: 15px 20px;
-    font-size: 12px;
-    border-radius: 20px;
-    text-align: center;
+.uses .cardsection .card p{
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    font-size: 16px;
-    /* display: block;
-    margin: 20px 50px; */
-    margin-top: 100px;
+    font-size: 0.75rem;
 }
 
-.btnView{
-    margin-top: 60px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    border-style:none;
-    height: 50px;
-    width: 150px;
-    font-size: 14px;
+.uses .cardsection .card .btn{
+    margin: 15px;
+    width: 40%;
+    padding: 7px 10px;
+    font-size:0.75rem;
+    border: none;
 }
 
-.btnAbt2{
-    margin-top: 0px;
-    margin-bottom: 70px;
+.uses .btn{
+    margin-top: 40px;
+    border: none;
+    padding: 10px 25px;
 }
 
-.about, .about2{
-    position: relative;
-    width: 100%;
+.about{
+    background: rgb(241, 246, 251);
     display: flex;
-}
-
-.about .imgbx{
-    padding:100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    padding: 0 100px 100px 100px;
+    
 }
 
-.about2 .imgbx2{
+.about .imgbx,
+.applications .about2 .imgbx2{
     width: 50%;
-    padding: 100px;
-    margin-top: 245px;
+    /* height: 500px; */
+    background-size: cover;
+    border-radius: 15px;
+    margin: 0 15px;
 }
 
 .about .imgbx img,
-.about2 .imgbx2 img{
-    max-width: 100%;
-    max-height: 100%;
+.applications .about2 .imgbx2 img{
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.about .contbx{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding: 100px;
-}
-
-.about2 .contbx2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    padding: 100px;
+.about .contbx,
+.applications .about2 .contbx2{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 .about .contbx h2{
+    font-size: 2rem;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    line-height: 1.5;
 }
 
 .about .contbx p{
-    margin-top: 15px;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
-    line-height: 25px;
+    line-height: 2;
+    font-size: 0.75rem;
 }
 
-.about2 .contbx2 .container{
+.about .contbx .btn{
+    margin-top: 40px;
+    border: none;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.applications{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px 100px 100px;
+}
+
+.applications .about2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+}
+
+.applications .about2 .contbx2 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -362,28 +337,51 @@ header{
     width: 100%;
 }
 
-.about2 .contbx2 .container .point1{
+.applications .about2 .contbx2 .container .point1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: right;
+    font-family: 'Poppins', sans-serif;
 }
 
-.about2 .contbx2 .container .waterimage{
+.applications .about2 .contbx2 .container .point1 h3{
+    font-size: 1.5rem;
+    font-weight: light;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(234, 234, 16, 0.589);
+}
+
+.applications .about2 .contbx2 .container .point1 p{
+    font-size: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    /* padding: 15px; */
+}
+
+.applications .about2 .contbx2 .container .waterimage{
     width: 20%;
     margin-left: 20px;
 }
 
-.about2 .contbx2 .container .waterimage img{
-    max-width: 100%;
-    max-height: 100%;
+.applications .about2 .contbx2 .container .waterimage img{
+    width: 100%;
+    height: auto;
+}
+
+.applications .about2 .imgbx2 img{
+    border-radius: none;
+}
+
+.applications .btn{
+    margin-top: 0;
+    border: none;
 }
 
 .blueemail{
     background: url("./images/blue.jpg");
     position: relative;
     width: 100%;
-    padding: 100px;
+    padding: 60px;
 }
 
 .blueemail .bluecont{
@@ -391,12 +389,15 @@ header{
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    margin-left: 100px;
 }
 
-.blueemail .bluecont .bluelorem{
+.blueemail .bluecont .bluelorem h2{
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 .blueemail .bluecont .blueinpemail input{
@@ -409,15 +410,11 @@ header{
 }
 
 .bigcardsection{
-    padding: 100px;
+    padding: 100px 200px;
 }
 
 .bigcardsection .bigcard{
-    /* background: rgb(92, 25, 163); */
-    background-color: #4d0099;
     width: 100%;
-    /* height: 500px; */
-    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,18 +422,24 @@ header{
 
 .bigcardsection .bigcard .bigcardimg{
     width:50%;
+    background-size: cover;
 }
 
 .bigcardsection .bigcard .bigcardimg img{
     border-radius:15px 0 0 15px;
+    width: 400px;
+    height: auto;
+    
 }
 
 .bigcardsection .bigcard .bigcardtxt{
+    background: rgb(92, 25, 163);
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0 15px 15px 0;
 }
 
 .bigcardsection .bigcard .bigcardtxt p{
@@ -452,12 +455,6 @@ header{
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
-
-/* .summary{
-    background: rgb(92, 25, 163);
-    position: relative;
-    display: flex;
-} */
 
 .sumsection{
     background: rgb(92, 25, 163);
@@ -485,7 +482,7 @@ header{
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 25px;
 }
 
@@ -506,13 +503,13 @@ header{
 }
 
 .sumsection .sumpart2 ul{
-    margin-top: 25px;
+    margin-top: 2rem;
 }
 
 .sumsection .sumpart2 li{
     list-style: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #fff;
     line-height: 25px;
 }
@@ -522,19 +519,25 @@ header{
 }
 
 .sumsection .sumpart2 .social{
-    margin-top: 25px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.sumsection .sumpart2 .social i{
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
 }
 
 .footer{
     background-color: black;
     color: #fff;
     width: 100%;
-    height: 7%;
+    padding: 0.625rem; /*10px*/
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
@@ -554,6 +557,3 @@ header{
     color: yellow;
     font-style: bolder;
 }
-
-
-
