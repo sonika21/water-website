@@ -38,6 +38,7 @@ header .headercontent .hpart{
     text-align: center;
 }
 
+header .headercontent .headeroptions a,
 header .headercontent .headeroptions a i{
     color: black;
 }
